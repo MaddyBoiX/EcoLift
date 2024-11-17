@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/full_background"
+    tools:context=".MainActivity">
+    <TextView
+        android:id="@+id/myTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events near"
+        android:textSize="47sp"
+        android:textColor="#C1FF72"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_medium"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="10dp"
+        />
+
+    <TextView
+        android:id="@+id/youTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You."
+        android:textSize="47sp"
+        android:textColor="#C1FF72"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_toEndOf="@id/myTextView"
+        android:layout_marginTop="120dp"
+        android:layout_marginStart="10dp"
+        />
+    <TextView
+        android:id="@+id/theTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toronto | Weekend Only | Communi.."
+        android:textSize="20sp"
+        android:textColor="#EEEEEE"
+        android:gravity="center"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="175dp"
+        />
+    <ImageView
+        android:contentDescription="Those Who Know..."
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="325dp"
+        android:src="@drawable/person_trash"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_corner" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="280dp"
+        android:textSize="20sp"
+        android:text="Guild Park Clean Up!"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="250dp"
+        android:textSize="20sp"
+        android:text="November 23th, All Day"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="@color/black"
+        />
+    <Button
+        android:id="@+id/joinButton"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Join Event!"
+        android:textSize="30sp"
+        android:textColor="#00BB77"
+        app:backgroundTint="#000000"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/pinLocationBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location - Google Maps"
+        android:fontFamily="@font/montserrat_bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="200dp"
+        app:backgroundTint="#4B61D1"/>
+
+
+</RelativeLayout>
